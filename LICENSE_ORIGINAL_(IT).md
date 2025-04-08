@@ -9,11 +9,10 @@
 **2.** La modifica di questo software per scopi commerciali, incluso il riutilizzo totale o di porzioni significative del codice sorgente in progetti e software destinati alla vendita, è vietata senza un’autorizzazione scritta preventiva da parte del detentore del copyright.
 
 **3.** Questo software viene fornito "così com'è", senza alcuna garanzia di alcun tipo, espressa o implicita, incluse, ma non limitate a, le garanzie di commerciabilità, idoneità per uno scopo particolare e non violazione. In nessun caso l'autore o il detentore del copyright sarà ritenuto responsabile per qualsiasi danno, reclamo o altra responsabilità che sorga da, fuori da o in connessione con il software, il suo utilizzo o altre operazioni relative ad esso.
-In caso si voglia includere o modificare questo software per scopi commerciali, siete pregati di contattarmi.
 
+In caso si voglia includere o modificare questo software per scopi commerciali, siete pregati di contattarmi.  
 La mia repository su GitHub è disponibile su: https://github.com/roob-p/SkipUacTaskCreator
 
-</br>
 
 ### **Versione ufficiale della licenza**
 Questa è la versione ufficiale della licenza. In caso di discrepanze con altre traduzioni, fa fede la versione in italiano.
