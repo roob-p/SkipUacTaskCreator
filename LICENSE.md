@@ -20,6 +20,6 @@ My repository on GitHub is available at: https://github.com/roob-p/SkipUacTaskCr
 </br>
 
 ### *Humorous Disclaimer:*
-*-The following conditions are purely humorous and, obviously, contrary to the previous parts, should not be considered as legally binding provisions:*
+*The following conditions are purely humorous and, obviously, contrary to the previous parts, should not be considered as legally binding provisions:*
 
 The author, with the aforementioned software, shall not be held responsible for any conflict escalations resulting in criminal or otherwise disastrous outcomes, occurring during condominium disputes, luncheons with mothers-in-law, shopping trips with partners during sales, mountain hikes, or even exchanges of opinions with neighbors (both in the common areas inside the building hallways and in the areas adjacent to them). Furthermore, the author shall not be held responsible for any natural, artificial, or paranormal events that might abruptly interrupt peaceful strolls in the park and/or other activities, motor-related or not, often ascribed to leisure hours. The author shall also not be considered part of the causes leading to: alien invasions, zombie pandemics, the return of the Maya, disruption of the space-time continuum, DEFCON level increases, formation of black holes, or intestinal disturbances (the latter, possibly, the worst of all).
