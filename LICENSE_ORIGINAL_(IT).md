@@ -21,6 +21,6 @@ Questa è la versione ufficiale della licenza. In caso di discrepanze con altre 
 </br>
 </br>
 
-*-Le condizioni che seguono sono puramente umoristiche e, ovviamente, al contrario delle parti precedenti, non devono essere considerate come disposizioni legali vincolanti:*
+*Le condizioni che seguono sono puramente umoristiche e, ovviamente, al contrario delle parti precedenti, non devono essere considerate come disposizioni legali vincolanti:*
 
 L'autore, con il sopracitato software, non potrà essere considerato responsabile di eventuali escalation conflittuali concludentesi in esiti delittuosi o altrimenti nefasti, verificatesi durante liti condominiali, pranzi dalle suocere, shopping coi partner in periodi di saldi, gite in montagna, nonchè scambi di opinioni col vicinato (tanto nelle parti comuni interne  degli androni dei palazzi, quanto nelle aree prospicenti ad essi), né avrà motivo di essere ritenuto causa di eventi naturali, artificiali o paranormali che dovessero interrompere bruscamente tranquille passeggiate nel parco e/o altre attività, motorie e non, sovente ascrivibili ad ore di svago. Non potrà altresì essere considerato come parte delle cause che dovessero portare a: invasioni aliene, pandemie zombie, ritorno dei Maya, rottura del continuum spazio-temporale, innalzamenti del livello DEFCON, formazione di buchi neri e disturbi intestinali (quest’ultimo, probabilmente, il peggiore di tutti).  
