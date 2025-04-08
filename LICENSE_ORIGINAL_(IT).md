@@ -13,7 +13,7 @@ In caso si voglia includere o modificare questo software per scopi commerciali, 
 
 La mia repository su GitHub è disponibile su: https://github.com/roob-p/SkipUacTaskCreator
 
-</br>
+
 
 ### **Versione ufficiale della licenza**
 Questa è la versione ufficiale della licenza. In caso di discrepanze con altre traduzioni, fa fede la versione in italiano.
