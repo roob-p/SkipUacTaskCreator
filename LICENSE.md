@@ -13,8 +13,7 @@ Permission is granted to any individual to use, copy, modify, and distribute thi
 
 **3.** This software is provided "as is", without any warranty of any kind, either express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and non-infringement. In no event shall the author or copyright holder be held liable for any damage, claim, or other liability arising from, out of, or in connection with the software, its use, or other dealings in the software.
 
-If you wish to include or modify this software for commercial purposes, please contact me.
-
+If you wish to include or modify this software for commercial purposes, please contact me.  
 My repository on GitHub is available at: https://github.com/roob-p/SkipUacTaskCreator
 
 </br>
