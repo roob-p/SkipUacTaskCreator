@@ -22,7 +22,7 @@
 
 
 ## ⚙️ Functionality
--  SkipUacTaskCreator makes use of an accumulator to pass files as arguments that doesn't prompt any UAC prompt.
+-  SkipUacTaskCreator makes use of an accumulator to pass files as arguments that doesn't trigger any UAC prompt.
 - If you'd prefer to confirm via UAC the task creation process, run "switch NoUAC ↔ UAC (both ways).exe" (which can also restore default behaviour).
 
 </br>
