@@ -6,6 +6,8 @@
 #AutoIt3Wrapper_Res_ProductName=SkipUacTaskCreator, SkipUacTaskOneClickCreator, SUTOCC
 #AutoIt3Wrapper_Res_ProductVersion=1.0.0.1
 #AutoIt3Wrapper_Res_CompanyName=roob-p (author)
+#AutoIt3Wrapper_Res_LegalCopyright=roob-p (author)
+#AutoIt3Wrapper_Res_LegalTradeMarks=roob-p (author)
 #AutoIt3Wrapper_Res_Language=1040
 #EndRegion ;**** Directives created by AutoIt3Wrapper_GUI ****
 #include <GUIConstantsEx.au3>
@@ -47,6 +49,8 @@ next
 $xinis=15
 $yinis=15
 
+$msg = GetLanguage()
+
 Global $hGui=GUICreate("SkipUacTaskCreator-window",640,480,-1,-1,$WS_SIZEBOX,bitor($WS_EX_TOPMOST,$WS_EX_ACCEPTFILES,$WS_EX_TRANSPARENT))
 
 GUISetIcon(@ScriptDir&'\icon.ico',"",$hGui)
@@ -75,8 +79,12 @@ $itemcur=""
 
 $b1=GUICtrlCreateButton("",560,30,60,40,$BS_ICON)
 GUICtrlSetImage($b1,@ScriptDir&'\graphics\icon.ico')
-$b2=GUICtrlCreateButton('Cancella',560,240,60,40,$BS_ICON)
+$b2=GUICtrlCreateButton('Delete',560,240,60,40,$BS_ICON)
 GUICtrlSetImage($b2,@ScriptDir&'\graphics\Delete.ico')
+
+
+
+
 
 
 $tot=0
@@ -148,7 +156,7 @@ $sel = StringSplit($L, "|",2)
 		Delete()
 
 		Case $b1
-			CreaTask()
+			Task()
 
 
 
@@ -194,6 +202,8 @@ EndFunc
 
 
 func Delete()
+
+
 
 
 if $L <> '' then
@@ -253,7 +263,7 @@ endfunc
 
 
 
-func CreaTask()
+func Task()
 	if $tot>0 then
 $file=FileOpen($tempfile,2)
 for $t=0 to $tot-1
@@ -275,12 +285,12 @@ $posGui=WinGetPos($hGui)
 $sizeGui=WinGetClientSize($hGui)
 
 
-SplashImageOn("Fatto!","C:\SkipUacTaskCreator\graphics\OK.bmp",150,100,$posGui[0]+$sizeGui[0]/2 - 75,$posGui[1]+$sizeGui[1]/2-50)
+SplashImageOn($msg[0],"C:\SkipUacTaskCreator\graphics\OK.bmp",150,100,$posGui[0]+$sizeGui[0]/2 - 75,$posGui[1]+$sizeGui[1]/2-50)
 
 
 
 
-Local $hWnd = WinGetHandle("Fatto!")
+Local $hWnd = WinGetHandle($msg[0])
 _WinAPI_EnableWindow($hWnd, True)
 Local $nStyle = _WinAPI_GetWindowLong($hWnd, $GWL_STYLE)
 Local $exStyle =_WinAPI_GetWindowLong($hWnd, $GWL_EXSTYLE)
@@ -327,7 +337,7 @@ Local $code = DllStructGetData($tagNMHDR, 3)
    If _isPressed(02) then
 
 $contextmenu = GUICtrlCreateContextMenu($ctrl)
-$canc=GUICtrlCreateMenuItem("Cancella", $contextmenu)
+$canc=GUICtrlCreateMenuItem($msg[1], $contextmenu)
 
 
    endif
@@ -338,6 +348,32 @@ $canc=GUICtrlCreateMenuItem("Cancella", $contextmenu)
 endfunc
 
 
-
+func GetLanguage()
+    Local $messages[2]
+    Switch StringRight(@OSLang, 2)
+        Case "09"  ;en
+            $messages[0] = "Done!"
+            $messages[1] = "Delete"
+        Case "10"  ;it
+            $messages[0] = "Fatto!"
+            $messages[1] = "Cancella"
+        Case "0a"  ;es
+            $messages[0] = "¡Hecho!"
+            $messages[1] = "Eliminar"
+        Case "16"  ;pt
+            $messages[0] = "Feito!"
+            $messages[1] = "Apagar"
+        Case "0c"  ;fr
+            $messages[0] = "Fait!"
+            $messages[1] = "Supprimer"
+        Case "07"  ;de
+            $messages[0] = "Fertig!"
+            $messages[1] = "Löschen"
+        Case Else
+            $messages[0] = "Done!"
+            $messages[1] = "Delete"
+    EndSwitch
+    Return $messages
+EndFunc
 
 
