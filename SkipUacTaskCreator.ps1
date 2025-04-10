@@ -65,7 +65,18 @@ $shortcut.Save()
 }
 
 
-write "Welcome!"
+$message2 = @{
+    "it" = "Benvenuto!"
+    "en" = "Welcome!"
+    "es" = "¡Bienvenido!"
+    "fr" = "Bienvenue !"
+    "de" = "Willkommen!"
+    "pt" = "Bem-vindo!"
+}
+
+
+
+write $message2[$lang]
 
 
 
@@ -139,7 +150,17 @@ makerunfile
 }#end $param.count -gt 1
 
 
-write "Done!"
+$message3 = @{ 
+    "it" = "Fatto!" 
+    "en" = "Done!" 
+    "es" = "¡Hecho!"
+    "fr" = "Fait !"
+    "de" = "Fertig!"
+    "pt" = "Feito!"
+}
+
+
+write $message3[$lang]
 
 Remove-item "c:\temp\$($prog_name)_temp.txt"
 start-sleep -s $t
