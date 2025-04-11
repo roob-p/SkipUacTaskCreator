@@ -35,11 +35,11 @@ If you enjoy SkipUacTaskCreator, you can buy me a coffee. It will be appreciated
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/E1E214R1KB)
 
-<br>
-
 - Github: [roop-p/SkipUacTaskCreator](https://github.com/roob-p/SkipUacTaskCreator/)
 - Download last version:
   [v1.0.0.1](https://github.com/roob-p/SkipUacTaskCreator/releases/download/v1.0.0.1/SkipUacTaskCreator-INSTALLER.exe)
+
+  <br>
 
 
 ### 📺 See it in action!
