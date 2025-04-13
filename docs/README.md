@@ -48,13 +48,16 @@ If you enjoy SkipUacTaskCreator, you can buy me a coffee. It will be appreciated
 ### 📺 See it in action!
 Here's a quick demo of how SkipUacTaskCreator works:
 
-<div align="center">
-  <img src="https://raw.githubusercontent.com/roob-p/SkipUacTaskCreator/main/media/1.png" width="49%" style="margin-right:2%;" />
-  <img src="https://raw.githubusercontent.com/roob-p/SkipUacTaskCreator/main/media/2.png" width="49%" />
+<!-- PNG affiancate -->
+<div style="display: flex; justify-content: center; gap: 2%;">
+  <img src="https://raw.githubusercontent.com/roob-p/SkipUacTaskCreator/main/media/1.png" style="width: 49%;" />
+  <img src="https://raw.githubusercontent.com/roob-p/SkipUacTaskCreator/main/media/2.png" style="width: 49%;" />
 </div>
 
-<div align="left" style="padding-left: 600px;">
-  <img src="https://raw.githubusercontent.com/roob-p/SkipUacTaskCreator/main/media/1.gif" width="90%" style="margin-bottom:10px;" />
-  <img src="https://raw.githubusercontent.com/roob-p/SkipUacTaskCreator/main/media/2.gif" width="90%" />
+<!-- GIF sotto, stesse dimensioni delle PNG affiancate -->
+<div style="max-width: 1000px; margin: 20px auto 0 auto;">
+  <img src="https://raw.githubusercontent.com/roob-p/SkipUacTaskCreator/main/media/1.gif" style="width: 100%; display: block; margin-bottom: 10px;" />
+  <img src="https://raw.githubusercontent.com/roob-p/SkipUacTaskCreator/main/media/2.gif" style="width: 100%; display: block;" />
 </div>
+
 
