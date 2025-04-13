@@ -5,7 +5,7 @@
 
 
 
-- **"SkipUacTaskCreator"**, also known as **SUTOCC** (***SkipUacTaskOneClickCreator***), lets you easily create administrator tasks for Windows Task Scheduler, so you can run programs that require elevated privileges without the UAC confirmation window.
+**"SkipUacTaskCreator"**, also known as **SUTOCC** (***SkipUacTaskOneClickCreator***), lets you easily create administrator tasks for Windows Task Scheduler, so you can run programs that require elevated privileges without the UAC confirmation window.
 
 
 
@@ -16,7 +16,7 @@
 
 
 ## 🛠️ How to Use
-- 🖱️ **Context menu:** Select files → Right-click → "Send to" → "SkipUacTaskCreator" 
+- 🖱️ **Context menu:** Select files > Right-click > "Send to" → `"SkipUacTaskCreator"`
 - 🪟 **Main window:** Launch `SkipUacTaskCreator-Window` → Drag & drop files → click **SUTOCC** icon.
 - 💻 **Command Line:** Pass files as arguments to `Accumulator.exe` (supports drag & drop onto the executable).
 
