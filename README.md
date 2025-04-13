@@ -43,9 +43,7 @@ Here's a quick demo of how SkipUacTaskCreator works:
   </tr>
 </table>
 
-<table>
-  <tr>
-    <td><img src="https://raw.githubusercontent.com/roob-p/SkipUacTaskCreator/main/media/1.gif" width="100%"></td>
-    <td><img src="https://raw.githubusercontent.com/roob-p/SkipUacTaskCreator/main/media/2.gif" width="100%"></td>
-  </tr>
-</table>
+<p align="left">
+  <img src="https://raw.githubusercontent.com/roob-p/SkipUacTaskCreator/main/media/1.gif" width="100%" />
+  <img src="https://raw.githubusercontent.com/roob-p/SkipUacTaskCreator/main/media/2.gif" width="100%" />
+</p>
