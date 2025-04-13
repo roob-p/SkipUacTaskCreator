@@ -17,7 +17,7 @@
 
 ## 🛠️ How to Use
 - 🖱️ **Context menu:** Select files > Right-click > "Send to" → `"SkipUacTaskCreator"`
-- 🪟 **Main window:** Launch `SkipUacTaskCreator-Window` → Drag & drop files → click **SUTOCC** icon.
+- 🪟 **Main window:** Launch `SkipUacTaskCreator-Window` > Drag & drop files > click **SUTOCC** icon.
 - 💻 **Command Line:** Pass files as arguments to `Accumulator.exe` (supports drag & drop onto the executable).
 
 
