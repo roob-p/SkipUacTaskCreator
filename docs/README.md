@@ -3,14 +3,13 @@
 [![🔙 Back](https://img.shields.io/badge/🔙-Back-white?style=flat-square&logoColor=blue&color=blue)](https://roob-p.github.io)
 
 ## 🚀 SkipUacTaskCreator
-✨ Create elevated tasks with just one click and run your programs without seeing the UAC prompt!
-## 
+✨ Create elevated tasks with just one click and run your programs without seeing the UAC prompt! 
 
 
 
 
 
-- **"SkipUacTaskCreator"**, also known as **SUTOCC** (***SkipUacTaskOneClickCreator***), lets you easily create administrator tasks for Windows Task Scheduler, so you can run programs that require elevated privileges without the UAC confirmation window.
+**"SkipUacTaskCreator"**, also known as **SUTOCC** (***SkipUacTaskOneClickCreator***), lets you easily create administrator tasks for Windows Task Scheduler, so you can run programs that require elevated privileges without the UAC confirmation window.
 
 
 
@@ -21,9 +20,9 @@
 
 
 ## 🛠️ How to Use
-- 🖱️ **Context menu:** Select files → Right-click → "Send to" → "SkipUacTaskCreator" 
-- 🪟 **Main window:** Launch `SkipUacTaskCreator-Window` → Drag & drop files → click **SUTOCC** icon.
-- 💻 **Command Line:** Pass files as arguments to `Accumulator.exe` (supports drag & drop onto the executable).
+- 🖱️ **Context menu:** Select files > Right-click > "Send to" → ***"SkipUacTaskCreator"*** 
+- 🪟 **Main window:** Launch ***SkipUacTaskCreator-Window*** > Drag & drop files > click **SUTOCC** icon.
+- 💻 **Command Line:** Pass files as arguments to ***Accumulator.exe*** (supports drag & drop onto the executable).
 
 
 ## ⚙️ Functionality
