@@ -1,7 +1,7 @@
  ## 🚀 SkipUacTaskCreator
 ✨ Create elevated tasks with just one click and run your programs without seeing the UAC prompt!
 
-</br>
+
 
 
 
