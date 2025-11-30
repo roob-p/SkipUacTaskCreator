@@ -53,13 +53,10 @@ If you enjoy `SkipUacTaskCreator`, you can buy me a coffee. It will be appreciat
 ### 📺 See it in action!
 Here's a quick demo of how SkipUacTaskCreator works:
 
-<div align="center">
-  <img src="https://raw.githubusercontent.com/roob-p/SkipUacTaskCreator/main/media/1.png" width="49%" style="margin-right:2%;" />
-  <img src="https://raw.githubusercontent.com/roob-p/SkipUacTaskCreator/main/media/2.png" width="49%" />
-</div>
 
-<div align="left" style="padding-left: 600px;">
-  <img src="https://raw.githubusercontent.com/roob-p/SkipUacTaskCreator/main/media/1.gif" width="90%" style="margin-bottom:10px;" />
-  <img src="https://raw.githubusercontent.com/roob-p/SkipUacTaskCreator/main/media/2.gif" width="90%" />
-</div>
+  <img src="https://raw.githubusercontent.com/roob-p/SkipUacTaskCreator/main/media/3.gif" width="80%" />
+  <img src="https://raw.githubusercontent.com/roob-p/SkipUacTaskCreator/main/media/4.gif" width="80%" />
+  <img src="https://raw.githubusercontent.com/roob-p/SkipUacTaskCreator/main/media/1.gif" width="80%" />
+  <img src="https://raw.githubusercontent.com/roob-p/SkipUacTaskCreator/main/media/2.gif" width="80%" />
+
 
