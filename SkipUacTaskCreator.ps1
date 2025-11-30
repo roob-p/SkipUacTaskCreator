@@ -10,6 +10,17 @@ $installdir= [System.IO.Path]::GetDirectoryName($installdir)
 
 $option=@{}
 
+#$optionscontent = Get-Content -Path "$installdir\config.ini" | ForEach-Object {
+#$parts = $_ -split "="
+#$option[$parts[0].Trim()]=$parts[1].Trim()
+#}
+
+$optionscontent = Get-Content -Path "$installdir\config.ini" | ForEach-Object {
+    $parts = $_ -split "=", 2
+    if ($parts.Count -eq 2) {
+        $option[$parts[0].Trim()] = $parts[1].Trim()
+    }
+}
 
 
 
@@ -43,10 +54,7 @@ exit
 
 
 
-$optionscontent=Get-Content -Path "$installdir\config.ini" | ForEach-Object {
-$parts = $_ -split "="
-$option[$parts[0].Trim()]=$parts[1].Trim()
-}
+
 
 
 $suffix=$option["SuffixName"]
