@@ -27,7 +27,7 @@
 The behavior of SkipUacTaskCreator can be customized via `config.ini`. Main options:
 | Option                         | Values / Description                                                                                                       |
 | ------------------------------ | -------------------------------------------------------------------------------------------------------------------------- |
-| `LnkPath`                      | `default` → uses pre-defined `installdir\Tasks-runfiles` folder. <br>Or specify a custom path (do not use quotes).         |
+| `LnkPath`                      | `default` → uses pre-defined `installdir\Tasks-runfiles` folder. <br>or specify a custom path (do not use quotes).         |
 | `OutputToSameFolder`           | `1` → save LNK in the same folder as the original file. <br> If `AppendSuffixToLnk = 0` a dot is automatically added.      |
 | `AppendSuffixToLnk`            | `1` → append the suffix specified in `SuffixName` to the LNK file.                                                         | 
 | `SuffixName`                   | Name to append to the LNK (supports spaces).                                                                               |
