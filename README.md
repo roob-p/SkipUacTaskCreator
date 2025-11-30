@@ -23,8 +23,8 @@
 - 🪟 **Main window:** Launch `SkipUacTaskCreator-Window` > Drag & drop files > click **SUTOCC** icon.
 - 💻 **Command Line:** Pass files as arguments to `Accumulator.exe` (supports drag & drop onto the executable).
 
-**Config.ini**
-The behavior of SkipUacTaskCreator can be customized via config.ini. Main options:
+**Config.ini:**  
+The behavior of SkipUacTaskCreator can be customized via `config.ini`. Main options:
 | Option                         | Values / Description                                                                                                       |
 | ------------------------------ | -------------------------------------------------------------------------------------------------------------------------- |
 | `LnkPath`                      | `default` → uses pre-defined `installdir\Tasks-runfiles` folder. <br>Or specify a custom path (do not use quotes).         |
