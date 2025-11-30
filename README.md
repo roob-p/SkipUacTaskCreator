@@ -14,7 +14,7 @@
 - 📁 **Multi-file support:** select and process a large number of programs at once.
 - 🧠 **Easy to use and super fast:** just a click and you're done.
 - 📂 **Flexible shortcut creation:** create the LNK in the program's folder, a predefined folder, or both.
-- 🖼️ **Icon blend:** overlay the `SkipUacTaskCreator` badge on the original program icon in the bottom-right corner.
+- 🖼️ **Icon blend (“Badgify”):** overlay the `SkipUacTaskCreator` badge on the original program icon in the bottom-right corner.
 - ✏️ **Custom suffix:** optionally append a string to the LNK name.
   
 
@@ -23,7 +23,7 @@
 - 🪟 **Main window:** Launch `SkipUacTaskCreator-Window` > Drag & drop files > click **SUTOCC** icon.
 - 💻 **Command Line:** Pass files as arguments to `Accumulator.exe` (supports drag & drop onto the executable).
 
-**Config.ini:**  
+**Config.ini options:**  
 The behavior of SkipUacTaskCreator can be customized via `config.ini`. Main options:
 | Option                         | Values / Description                                                                                                       |
 | ------------------------------ | -------------------------------------------------------------------------------------------------------------------------- |
