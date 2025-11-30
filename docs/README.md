@@ -55,7 +55,7 @@ If you enjoy `SkipUacTaskCreator`, you can buy me a coffee. It will be appreciat
 
 - Github: [roop-p/SkipUacTaskCreator](https://github.com/roob-p/SkipUacTaskCreator/)
 - Download last version:
-  [v1.0.0.1](https://github.com/roob-p/SkipUacTaskCreator/releases/download/v1.0.0.1/SkipUacTaskCreator-INSTALLER.exe)
+  [v1.0.0.2](https://github.com/roob-p/SkipUacTaskCreator/releases/download/v1.0.0.2/SkipUacTaskCreator-INSTALLER.exe)
   
 
 [License Original (ITA)](https://github.com/roob-p/SkipUacTaskCreator/blob/main/docs/LICENSE_ORIGINAL_(IT).md)
