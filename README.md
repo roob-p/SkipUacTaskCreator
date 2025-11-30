@@ -14,7 +14,7 @@
 - 📁 **Multi-file support:** select and process a large number of programs at once.
 - 🧠 **Easy to use and super fast:** just a click and you're done.
 - 📂 **Flexible shortcut creation:** create the LNK in the program's folder, a predefined folder, or both.
-- 🖼️ **Icon blend (“Badgify”):** overlay the `SkipUacTaskCreator` badge on the original program icon in the bottom-right corner.
+- 🖼️ **Icon blending (Badgifying):** overlay the `SkipUacTaskCreator` badge on the original program icon in the bottom-right corner.
 - ✏️ **Custom suffix:** optionally append a string to the LNK name.
   
 
