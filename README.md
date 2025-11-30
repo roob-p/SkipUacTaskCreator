@@ -33,8 +33,8 @@ The behavior of SkipUacTaskCreator can be customized via `config.ini`. Main opti
 | `SuffixName`                   | Name to append to the LNK (supports spaces).                                                                               |
 | `LnkInBothBaseAndOutputFolder` | `1` → create LNK in both the base folder and orifinal file folder (requires `OutputToSameFolder = 1`).                     |
 | `IconStyle`                    | `1` → blend the original file icon with `SkipUacTaskCreator` badge.<br>`2` → Use only the `SkipUacTaskCreator` icon.       |
-| `RemoveGeneratedIcon`          | `1` → delete temporary icon file.<br>`0` → Keep it.                                                                        |
-                                                            |
+| `RemoveGeneratedIcon`          | `1` → delete temporary icon file.<br>`0` → keep it.                                                                        |
+                                                            
 
 
 
