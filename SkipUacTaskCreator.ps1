@@ -1,12 +1,16 @@
-#$runpath=""
 $t=2
 $prog_name="SkipUacTaskCreator"
+
 
 
 $installdir= [System.Diagnostics.Process]::GetCurrentProcess().MainModule.FileName
 $installdir= [System.IO.Path]::GetDirectoryName($installdir)
 
-$runpath="$installdir\Tasks-runfiles"
+
+
+$option=@{}
+
+
 
 
 
@@ -21,7 +25,6 @@ $message =@{
 "pt" = "Selecione os arquivos e envie-os para o SkipUacTaskCreator pelo menu de contexto, arrastando-os para o Accumulator.exe, ou inicie o SkipUacTaskCreator-window.exe e arraste os arquivos para a janela!"
 }
  if (!$message.ContainsKey($Lang)){ $lang= "en" }
-
 
 
 if (-not(Test-Path("c:\temp\$($prog_name)_temp.txt"))){
@@ -40,6 +43,24 @@ exit
 
 
 
+$optionscontent=Get-Content -Path "$installdir\config.ini" | ForEach-Object {
+$parts = $_ -split "="
+$option[$parts[0].Trim()]=$parts[1].Trim()
+}
+
+
+$suffix=$option["SuffixName"]
+$lnkpath=$option["LnkPath"]
+
+
+$runpath="$installdir\Tasks-runfiles"
+
+if ($lnkpath -eq "default") {
+	$lnkpath=$runpath
+} else{New-Item -Path $lnkpath -ItemType Directory -Force > $null}
+
+
+
 
 
 New-Item -Path $runpath -ItemType Directory -Force > $null
@@ -54,14 +75,37 @@ $batcontent | Set-Content -Path "$($runpath)\$file_name.bat"
 	
 	
 $WScriptShell = New-Object -ComObject WScript.Shell
-$shortcut = $WScriptShell.CreateShortcut("$runpath\$file_name.lnk")
+if ($option["OutputToSameFolder"] -eq 1) {
+if ($option["AppendSuffixToLnk"] -ge 1) {	
+$shortcut = $WScriptShell.CreateShortcut("$($file_path.DirectoryName)\$file_name $suffix.lnk")	} else {$shortcut = $WScriptShell.CreateShortcut("$($file_path.DirectoryName)\$file_name..lnk")}
+}else { 
+if ($option["AppendSuffixToLnk"] -eq 2) {$shortcut = $WScriptShell.CreateShortcut("$lnkpath\$file_name $suffix.lnk") } 
+else{ $shortcut = $WScriptShell.CreateShortcut("$lnkpath\$file_name.lnk") }
+}
+
 $shortcut.TargetPath = "$($runpath)\$($file_name).bat"
 $shortcut.WindowStyle = 7
-$shortcut.IconLocation= "$installdir\icon.ico"
+if ($option["IconStyle"] -eq 1) {
+	start-process "$installdir\Badgify.exe" -Argumentlist "`"$($File_path)`"" 
+	#start-sleep -s 0.2
+	$shortcut.IconLocation= "$installdir\icon\$file_name IconTEMP.ico"
+} else{$shortcut.IconLocation= "$installdir\icon.ico"}
 $shortcut.Save()
+
 	
 	
-	
+if (($option["LnkInBothBaseAndOutputFolder"] -eq 1) -and ($option["OutputToSameFolder"] -eq 1)) {
+if ($option["AppendSuffixToLnk"] -eq 2) {	$shortcut = $WScriptShell.CreateShortcut("$lnkpath\$file_name $suffix.lnk") }else { $shortcut = $WScriptShell.CreateShortcut("$lnkpath\$file_name.lnk")}
+	}
+$shortcut.TargetPath = "$($runpath)\$($file_name).bat"
+$shortcut.WindowStyle = 7
+if ($option["IconStyle"] -eq 1) {
+	start-process "$installdir\Badgify.exe" -Argumentlist "`"$($File_path)`"" 
+	#start-sleep -s 0.2
+	$shortcut.IconLocation= "$installdir\icon\$file_name IconTEMP.ico"
+} else{$shortcut.IconLocation= "$installdir\icon.ico"}
+$shortcut.Save()	
+
 }
 
 
@@ -88,7 +132,7 @@ $file_path=Get-Item($file)
 $file_ext=$file_path.extension
 $file_name=[System.IO.Path]::GetFileNameWithoutExtension($file)
 
-
+$t=1
 
 $time=(Get-Date).AddMinutes(-30).ToString("HH:mm")
 $user=$env:USERNAME
@@ -101,8 +145,8 @@ $File=(New-Object -COM WScript.Shell).CreateShortcut($file_path)
 
 if ($file_ext -eq ".lnk"){ 
 if ($file.Arguments -ne ''){
-$Action = New-ScheduledTaskAction -Execute "`"$($File.Targetpath)`"" -Argument "$($File.Arguments)"
-}else{$Action = New-ScheduledTaskAction -Execute "`"$($File.Targetpath)`""}
+$Action = New-ScheduledTaskAction -Execute "`"$($File.Targetpath)`"" -Argument "$($File.Arguments)" -WorkingDirectory "$($File.WorkingDirectory)"
+}else{$Action = New-ScheduledTaskAction -Execute "`"$($File.Targetpath)`"" -WorkingDirectory "$($File.WorkingDirectory)"}
 }else{ $Action = New-ScheduledTaskAction -Execute "`"$($file)`""}
 $Settings = New-ScheduledTaskSettingsSet -AllowStartIfOnBatteries -StartWhenAvailable:$false
 Register-ScheduledTask -Action $Action -Settings $Settings -TaskName "$prog_name\$($file_name)" -User "$($user)" -RunLevel Highest -Force
@@ -111,7 +155,11 @@ Register-ScheduledTask -Action $Action -Settings $Settings -TaskName "$prog_name
 makerunfile
 }elseif ($param.count -gt 1){ 
 
+if ($param.count -lt 3){
+#$t=0.5*$param.count
+}#	else{$t=2}
 
+$t=2
 
 for($i=0;$i -lt $($param.count);$i++){
 
@@ -136,8 +184,8 @@ $user=$env:USERNAME
 
 if ($file_ext -eq ".lnk"){ 
 if ($file.Arguments -ne ''){
-$Action = New-ScheduledTaskAction -Execute "`"$($File.Targetpath)`"" -Argument "$($File.Arguments)"
-}else{$Action = New-ScheduledTaskAction -Execute "`"$($File.Targetpath)`""}
+$Action = New-ScheduledTaskAction -Execute "`"$($File.Targetpath)`"" -Argument "$($File.Arguments)" -WorkingDirectory "$($File.WorkingDirectory)"
+}else{$Action = New-ScheduledTaskAction -Execute "`"$($File.Targetpath)`"" -WorkingDirectory "$($File.WorkingDirectory)"}
 }else{ $Action = New-ScheduledTaskAction -Execute "`"$($file)`""}
 $Settings = New-ScheduledTaskSettingsSet -AllowStartIfOnBatteries -StartWhenAvailable:$false
 Register-ScheduledTask -Action $Action -Settings $Settings -TaskName "$prog_name\$($file_name)" -User "$($user)" -RunLevel Highest -Force
@@ -163,5 +211,22 @@ $message3 = @{
 write $message3[$lang]
 
 Remove-item "c:\temp\$($prog_name)_temp.txt"
+
 start-sleep -s $t
+
+if ($option["RemoveGeneratedIcon"] -eq 1){ 
+
+
+
+for($i=0;$i -lt $($param.count);$i++){
+$file=$param[$i]
+$file_path=Get-Item($file)
+$file_ext=$file_path.extension
+$file_name=[System.IO.Path]::GetFileNameWithoutExtension($file)
+#Remove-Item -path "$($installdir)\icon\$file_name IconTEMP.ico" -Force
+[System.IO.File]::Delete("$installdir\icon\$file_name IconTEMP.ico")
+}
+
+}
+
 
