@@ -13,13 +13,9 @@
 - ⚡ **The program doesn't trigger any UAC prompt when creating tasks!** 💪
 - 📁 **Multi-file support:** select and process a large number of programs at once.
 - 🧠 **Easy to use and super fast:** just a click and you're done.
-- 📂 **Flexible shortcut creation:**
-  - Create the LNK in the same folder as the program
-  - Use the default folder (Tasks-runfiles in the installation directory)
-  - Specify a custom output path
-- ✏️ Custom suffix: optionally append a suffix to the LNK name.
-- 🖼️ Icon options:
-  - Blend the original program'sicon with the SkipUacTaskCreator icon in the bottom-right corner
+- 📂 **Flexible shortcut creation:** or create the LNK in the same folder as the program (or both)
+- 🖼️ **Icon options:** Use a default icon or Blend the original program's icon with the `SkipUacTaskCreator` icon in the bottom-right corner.
+- ✏️ **Custom suffix:** optionally append a string to the LNK name.
 
 Choose whether to keep or delete the generated icon files
 
