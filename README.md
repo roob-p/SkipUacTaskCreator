@@ -12,13 +12,35 @@
 ## 🌟 Features
 - ⚡ **The program doesn't trigger any UAC prompt when creating tasks!** 💪
 - 📁 **Multi-file support:** select and process a large number of programs at once.
-- 🧠 **Easy to use and super fast:** just a click and you're done. 
+- 🧠 **Easy to use and super fast:** just a click and you're done.
+- 📂 **Flexible shortcut creation:**
+  - Create the LNK in the same folder as the program
+  - Use the default folder (Tasks-runfiles in the installation directory)
+  - Specify a custom output path
+- ✏️ Custom suffix: optionally append a suffix to the LNK name.
+- 🖼️ Icon options:
+  - Blend the original program'sicon with the SkipUacTaskCreator icon in the bottom-right corner
 
+Choose whether to keep or delete the generated icon files
 
 ## 🛠️ How to Use
 - 🖱️ **Context menu:** Select files > Right-click > "Send to" → `"SkipUacTaskCreator"`
 - 🪟 **Main window:** Launch `SkipUacTaskCreator-Window` > Drag & drop files > click **SUTOCC** icon.
 - 💻 **Command Line:** Pass files as arguments to `Accumulator.exe` (supports drag & drop onto the executable).
+
+**Config.ini**
+The behavior of SkipUacTaskCreator can be customized via config.ini. Main options:
+| Option                         | Values / Description                                                                                                       |
+| ------------------------------ | -------------------------------------------------------------------------------------------------------------------------- |
+| `LnkPath`                      | `default` → uses pre-defined `installdir\Tasks-runfiles` folder. <br>Or specify a custom path (do not use quotes).         |
+| `OutputToSameFolder`           | `1` → save LNK in the same folder as the original file. <br> If `AppendSuffixToLnk = 0` a dot is automatically added.      |
+| `AppendSuffixToLnk`            | `1` → append the suffix specified in `SuffixName` to the LNK file.                                                         | 
+| `SuffixName`                   | Name to append to the LNK (supports spaces).                                                                               |
+| `LnkInBothBaseAndOutputFolder` | `1` → create LNK in both the base folder and orifinal file folder (requires `OutputToSameFolder = 1`).                     |
+| `IconStyle`                    | `1` → blend the original file icon with `SkipUacTaskCreator` badge.<br>`2` → Use only the `SkipUacTaskCreator` icon.       |
+| `RemoveGeneratedIcon`          | `1` → delete temporary icon file.<br>`0` → Keep it.                                                                        |
+                                                            |
+
 
 
 ## ⚙️ Functionality
