@@ -45,7 +45,7 @@ The behavior of SkipUacTaskCreator can be customized via `config.ini`. Main opti
 </br>
 
 ## ⚠️ Warning – False Positives 
-Some antivirus programs are currently flagging **Badgify.exe** as malware.  
+Some AV reports **Badgify.exe** as malware.  
 This is a **false positive**. The software is completely safe and contains **no harmful code**.  
 You can review the **source code** on the repository.
 
