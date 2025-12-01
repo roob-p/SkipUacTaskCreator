@@ -51,16 +51,19 @@ The behavior of SkipUacTaskCreator can be customized via `config.ini`. Main opti
 
 <br>
 
+
+If you enjoy `SkipUacTaskCreator`, you can buy me a coffee. It will be appreciated ;)
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/E1E214R1KB)
+
+<br>
+
 ## ⚠️ Warning – False Positives 
 Some AV reports **Badgify.exe** as malware.  
 This is a **false positive**. The software is completely safe and contains **no harmful code**.  
 You can review the **source code** on the repository.
 
 <br>
-
-If you enjoy `SkipUacTaskCreator`, you can buy me a coffee. It will be appreciated ;)
-
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/E1E214R1KB)
 
 
 - Github: [roop-p/SkipUacTaskCreator](https://github.com/roob-p/SkipUacTaskCreator/)
