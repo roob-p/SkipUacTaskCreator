@@ -47,6 +47,8 @@ The behavior of SkipUacTaskCreator can be customized via `config.ini`. Main opti
 
 If you enjoy `SkipUacTaskCreator`, you can buy me a coffee. It will be appreciated ;)
 
+</br>
+
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/E1E214R1KB)
 
 </br>
