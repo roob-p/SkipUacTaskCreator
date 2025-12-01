@@ -3,7 +3,6 @@
 [![🔙 Back](https://img.shields.io/badge/🔙-Back-white?style=flat-square&logoColor=blue&color=blue)](https://roob-p.github.io)  
 
 
-  
  ## 🚀 SkipUacTaskCreator  
 ✨ Create elevated tasks with just one click and run your programs without seeing the UAC prompt!
 
@@ -50,7 +49,14 @@ The behavior of SkipUacTaskCreator can be customized via `config.ini`. Main opti
 -  SkipUacTaskCreator makes use of an accumulator to pass files as arguments that doesn't trigger any UAC prompt.
 - If you'd prefer to confirm via UAC the task creation process, run `switch NoUAC ↔ UAC (both ways).exe` (which can also restore default behaviour).
 
-</br>
+<br>
+
+## ⚠️ Warning – False Positives 
+Some AV reports **Badgify.exe** as malware.  
+This is a **false positive**. The software is completely safe and contains **no harmful code**.  
+You can review the **source code** on the repository.
+
+<br>
 
 If you enjoy `SkipUacTaskCreator`, you can buy me a coffee. It will be appreciated ;)
 
