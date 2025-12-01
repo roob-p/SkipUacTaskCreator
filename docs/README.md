@@ -30,16 +30,18 @@
 - 💻 **Command Line:** Pass files as arguments to `Accumulator.exe` (supports drag & drop onto the executable).
 
 **Config.ini options:**  
-The behavior of SkipUacTaskCreator can be customized via `config.ini`. Main options:  
-| Option                         | Values / Description                                                                                                       |  
-| ------------------------------ | -------------------------------------------------------------------------------------------------------------------------- |  
-| `LnkPath`                      | `default` → uses pre-defined `installdir\Tasks-runfiles` folder. <br>Or specify a custom path (do not use quotes).         |  
-| `OutputToSameFolder`           | `1` → save LNK in the same folder as the original file. <br> If `AppendSuffixToLnk = 0` a dot is automatically added.      |  
-| `AppendSuffixToLnk`            | `1` → append the suffix specified in `SuffixName` to the LNK file.                                                         |     
-| `SuffixName`                   | Name to append to the LNK (supports spaces).                                                                               |  
-| `LnkInBothBaseAndOutputFolder` | `1` → create LNK in both the base folder and orifinal file folder (requires `OutputToSameFolder = 1`).                     |  
-| `IconStyle`                    | `1` → blend the original file icon with `SkipUacTaskCreator` badge.<br>`2` → Use only the `SkipUacTaskCreator` icon.       |  
-| `RemoveGeneratedIcon`          | `1` → delete temporary icon file.<br>`0` → keep it.                                                                        |  
+The behavior of SkipUacTaskCreator can be customized via `config.ini`. Main options:
+
+| Option                         | Values / Description                                                                                                       |
+| ------------------------------ | -------------------------------------------------------------------------------------------------------------------------- |
+| `LnkPath`                      | `default` → uses pre-defined `installdir\Tasks-runfiles` folder. Or specify a custom path (no quotes).                    |
+| `OutputToSameFolder`           | `1` → save LNK in the same folder as the original file. If `AppendSuffixToLnk = 0` a dot is automatically added.          |
+| `AppendSuffixToLnk`            | `1` → append the suffix specified in `SuffixName` to the LNK file.                                                         |
+| `SuffixName`                   | Name to append to the LNK (supports spaces).                                                                               |
+| `LnkInBothBaseAndOutputFolder` | `1` → create LNK in both the base folder and original file folder (requires `OutputToSameFolder = 1`).                     |
+| `IconStyle`                    | `1` → blend the original file icon with `SkipUacTaskCreator` badge. `2` → use only the `SkipUacTaskCreator` icon.         |
+| `RemoveGeneratedIcon`          | `1` → delete temporary icon file. `0` → keep it.                                                                           |
+
                                                             
 
 
