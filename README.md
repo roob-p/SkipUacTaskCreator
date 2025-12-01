@@ -43,7 +43,8 @@ The behavior of SkipUacTaskCreator can be customized via `config.ini`. Main opti
 - If you'd prefer to confirm via UAC the task creation process, run `switch NoUAC ↔ UAC (both ways).exe` (which can also restore default behaviour).
 
 </br>
-## ⚠️ Warning – False Positives**  
+
+## ⚠️ Warning – False Positives 
 Some antivirus programs are currently flagging **Badgify.exe** as malware.  
 This is a **false positive**. The software is completely safe and contains **no harmful code**.  
 You can review the **source code** on the repository.
