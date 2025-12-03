@@ -53,8 +53,8 @@ if ($fileH=0) then
 
 
 
-$hfileH=_GDIPlus_BitmapCreateFromHICON ($fileH)
-$hiconH=_GDIPlus_BitmapCreateFromHICON ($iconH)
+$hfileH=_GDIPlus_BitmapCreateFromHICON32($fileH)
+$hiconH=_GDIPlus_BitmapCreateFromHICON32($iconH)
 
 
 $hGraphics = _GDIPlus_ImageGetGraphicsContext($hfileH)
@@ -86,3 +86,4 @@ _GDIPlus_ImageDispose($hiconH)
 _GDIPlus_ImageDispose($hGraphics)
 _WinAPI_DestroyIcon($fileH)
 _WinAPI_DestroyIcon($iconH)
+
