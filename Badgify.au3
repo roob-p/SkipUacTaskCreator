@@ -1,6 +1,6 @@
 #Region ;**** Directives created by AutoIt3Wrapper_GUI ****
 #AutoIt3Wrapper_Icon=icon.ico
-#AutoIt3Wrapper_UseX64=n
+#AutoIt3Wrapper_UseX64=y
 #AutoIt3Wrapper_Res_Description=Badge
 #AutoIt3Wrapper_Res_Fileversion=1.0.0.2
 #AutoIt3Wrapper_Res_ProductName=Badgify-SkipUacTaskCreator
@@ -53,8 +53,8 @@ if ($fileH=0) then
 
 
 
-$hfileH=_GDIPlus_BitmapCreateFromHICON32($fileH)
-$hiconH=_GDIPlus_BitmapCreateFromHICON32($iconH)
+$hfileH=_GDIPlus_BitmapCreateFromHICON32 ($fileH)
+$hiconH=_GDIPlus_BitmapCreateFromHICON32 ($iconH)
 
 
 $hGraphics = _GDIPlus_ImageGetGraphicsContext($hfileH)
@@ -86,4 +86,5 @@ _GDIPlus_ImageDispose($hiconH)
 _GDIPlus_ImageDispose($hGraphics)
 _WinAPI_DestroyIcon($fileH)
 _WinAPI_DestroyIcon($iconH)
+
 
