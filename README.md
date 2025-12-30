@@ -1,5 +1,6 @@
  ## 🚀 SkipUacTaskCreator
  <!--![GitHub Downloads](https://img.shields.io/github/downloads/roob-p/SkipUacTaskCreator/total)-->  
+ ![GitHub Downloads](https://img.shields.io/github/downloads/roob-p/SkipUacTaskCreator/total)  
 ✨ Create elevated tasks with just one click and run your programs without seeing the UAC prompt!
 
 
