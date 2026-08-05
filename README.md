@@ -54,7 +54,7 @@ If you enjoy `SkipUacTaskCreator`, you can buy me a coffee. It will be appreciat
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/E1E214R1KB)
 
-</br>
+<br>
 
   
 - ⏬ Download last version:
