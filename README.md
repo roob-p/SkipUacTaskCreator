@@ -57,7 +57,7 @@ If you enjoy `SkipUacTaskCreator`, you can buy me a coffee. It will be appreciat
 <br>
 
   
-- ⏬ Download last version:
+- 📥 Download last version:
   [v1.0.0.2](https://github.com/roob-p/SkipUacTaskCreator/releases/download/v1.0.0.2/SkipUacTaskCreator-INSTALLER.exe)
 - 💻 Install with winget:
   `winget install SkipUacTaskCreator`  
