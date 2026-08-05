@@ -47,6 +47,12 @@ The behavior of SkipUacTaskCreator can be customized via `config.ini`. Main opti
 </br>
 
 
+- ⏬ Download last version:
+  [v1.0.0.2](https://github.com/roob-p/SkipUacTaskCreator/releases/download/v1.0.0.2/SkipUacTaskCreator-INSTALLER.exe)
+- 💻 Install with winget:
+  `winget install SkipUacTaskCreator`
+
+
 If you enjoy `SkipUacTaskCreator`, you can buy me a coffee. It will be appreciated ;)
 
 </br>
