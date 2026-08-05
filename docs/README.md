@@ -69,7 +69,7 @@ You can review the **source code** on the repository.
 
 
 - Github repo: 🐙 [roop-p/SkipUacTaskCreator](https://github.com/roob-p/SkipUacTaskCreator/)
-- Download last version:
+- ⏬ Download last version:
   [v1.0.0.2](https://github.com/roob-p/SkipUacTaskCreator/releases/download/v1.0.0.2/SkipUacTaskCreator-INSTALLER.exe)
 - 💻 Install with winget:
   `winget install SkipUacTaskCreator`
